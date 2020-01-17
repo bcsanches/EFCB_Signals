@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../XSLT/appearancetable.xsl" type="text/xsl"?>
+
+<appearancetable
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "http://jmri.org/xml/schema/appearancetable.xsd"
+>
+
+  <copyright xmlns="http://docbook.org/ns/docbook">
+    <year>2009</year><year>2010</year><holder>JMRI</holder>
+  </copyright>
+  
+  <authorgroup xmlns="http://docbook.org/ns/docbook">
+    <author>
+        <personname><firstname>Bruno</firstname><surname>Sanches</surname></personname>
+		<email>bcsanches@gmail.com</email>
+    </author>       
+  </authorgroup>
+
+  <revhistory xmlns="http://docbook.org/ns/docbook">
+    <revision>
+        <revnumber>1</revnumber>
+        <date>2020-01-12</date>
+        <authorinitials>BCS</authorinitials>
+        <revremark>Initial Revision</revremark>
+    </revision>        
+  </revhistory>
+
+  <aspecttable>EFCB</aspecttable>
+  <name>Double head dwarf signal</name>
+  <reference>-</reference>
+  <description>Appearances for a two-searchlight dwarf signal head without other badging</description>
+  
+  <appearances>
+
+    <appearance>
+      <aspectname>Clear</aspectname>
+      <show>dark</show>
+      <show>green</show>
+      <reference>-</reference>
+      <imagelink>../../../resources/icons/smallschematics/aspects/EFCB/SL-2-low/DrkGreen.gif</imagelink>
+    </appearance>
+	<appearance>
+      <aspectname>Approach</aspectname>
+      <show>flashred</show>
+      <show>dark</show>
+      <reference>-</reference>
+      <imagelink>../../../resources/icons/smallschematics/aspects/EFCB/SL-2-low/FlashRedDrk.gif</imagelink>
+    </appearance>
+	<appearance>
+      <aspectname>Diverging Clear</aspectname>
+      <show>dark</show>
+      <show>flashgreen</show>
+      <reference>-</reference>
+      <imagelink>../../../resources/icons/smallschematics/aspects/EFCB/SL-2-low/DrkFlashGreen.gif</imagelink>
+    </appearance>
+	<appearance>
+      <aspectname>Diverging Approach</aspectname>
+      <show>flashred</show>
+      <show>dark</show>
+      <reference>-</reference>
+      <imagelink>../../../resources/icons/smallschematics/aspects/EFCB/SL-2-low/FlashRedDrk.gif</imagelink>
+    </appearance>
+    <appearance>
+      <aspectname>Stop</aspectname>
+      <show>red</show>
+      <show>dark</show>
+      <reference>-</reference>
+      <imagelink>../../../resources/icons/smallschematics/aspects/EFCB/SL-2-low/RedDrk.gif</imagelink>
+    </appearance>
+	<appearance>
+      <aspectname>Dark</aspectname>
+      <show>dark</show>
+      <show>dark</show>
+      <reference>-</reference>
+      <imagelink>../../../resources/icons/smallschematics/aspects/EFCB/SL-2-low/DrkDrk.gif</imagelink>
+    </appearance>
+
+  </appearances>
+
+  <specificappearances>
+    <danger>
+      <aspect>Stop</aspect>
+    </danger>
+    <held>
+      <aspect>Stop</aspect>
+    </held>
+	<dark>
+      <aspect>Not Lit</aspect>      
+    </dark>
+  </specificappearances>
+
+  <aspectMappings>
+    <aspectMapping>
+      <advancedAspect>Clear</advancedAspect>
+      <ourAspect>Clear</ourAspect>      
+    </aspectMapping>
+	
+    <aspectMapping>
+      <advancedAspect>Approach</advancedAspect>
+      <ourAspect>Clear</ourAspect>      
+    </aspectMapping>
+
+    <aspectMapping>
+      <advancedAspect>Diverging Clear</advancedAspect>
+      <ourAspect>Clear</ourAspect>      
+    </aspectMapping>    
+
+    <aspectMapping>
+      <advancedAspect>Diverging Approach</advancedAspect>
+      <ourAspect>Clear</ourAspect>
+    </aspectMapping>
+
+	<aspectMapping>
+      <advancedAspect>Stop</advancedAspect>
+      <ourAspect>Approach</ourAspect>      
+    </aspectMapping>
+    
+    <aspectMapping>
+      <advancedAspect>Unlit</advancedAspect>
+      <ourAspect>Approach</ourAspect>      
+    </aspectMapping>
+  </aspectMappings>  
+</appearancetable>  
